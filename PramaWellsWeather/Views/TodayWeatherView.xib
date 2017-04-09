@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="kte-fE-PP8" customClass="TodayWeatherView">
+            <rect key="frame" x="0.0" y="0.0" width="281" height="229"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016年4月9日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLL-Rg-HVj">
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kyo-dv-929">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="lhe-LL-362"/>
+                        <constraint firstAttribute="height" constant="50" id="zPN-jE-Nlv"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17℃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1W-Tf-rwb">
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="晴 ｜ 微风" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvM-p7-2Lb">
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzp-wy-o2o">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wvM-p7-2Lb" firstAttribute="top" secondItem="o1W-Tf-rwb" secondAttribute="bottom" constant="8" id="21L-Nx-xZa"/>
+                <constraint firstItem="wLL-Rg-HVj" firstAttribute="centerX" secondItem="kte-fE-PP8" secondAttribute="centerX" id="2vv-KL-NRt"/>
+                <constraint firstItem="o1W-Tf-rwb" firstAttribute="top" secondItem="Kyo-dv-929" secondAttribute="bottom" constant="8" id="5wJ-MM-a3c"/>
+                <constraint firstItem="wvM-p7-2Lb" firstAttribute="centerX" secondItem="kte-fE-PP8" secondAttribute="centerX" id="Btz-HO-75f"/>
+                <constraint firstItem="Kyo-dv-929" firstAttribute="top" secondItem="wLL-Rg-HVj" secondAttribute="bottom" constant="8" id="JiG-fm-GMy"/>
+                <constraint firstItem="wLL-Rg-HVj" firstAttribute="top" secondItem="kte-fE-PP8" secondAttribute="top" id="NkM-az-nUa"/>
+                <constraint firstItem="Pzp-wy-o2o" firstAttribute="centerX" secondItem="kte-fE-PP8" secondAttribute="centerX" id="duP-ej-EgB"/>
+                <constraint firstItem="Kyo-dv-929" firstAttribute="centerX" secondItem="kte-fE-PP8" secondAttribute="centerX" id="g74-PL-Kw0"/>
+                <constraint firstItem="o1W-Tf-rwb" firstAttribute="centerX" secondItem="kte-fE-PP8" secondAttribute="centerX" id="ofB-qG-fDO"/>
+                <constraint firstItem="Pzp-wy-o2o" firstAttribute="top" secondItem="wvM-p7-2Lb" secondAttribute="bottom" constant="5" id="plU-gm-RH1"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLabel" destination="wLL-Rg-HVj" id="yqW-tj-dmI"/>
+                <outlet property="descLabel" destination="wvM-p7-2Lb" id="hqh-x9-1R5"/>
+                <outlet property="imageView" destination="Kyo-dv-929" id="0wx-O9-4Cd"/>
+                <outlet property="pm25Label" destination="Pzp-wy-o2o" id="cv2-LM-cKM"/>
+                <outlet property="temperatureLabel" destination="o1W-Tf-rwb" id="ZMa-fQ-LWB"/>
+            </connections>
+            <point key="canvasLocation" x="100.5" y="138.25"/>
+        </view>
+    </objects>
+</document>
